@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金庸群侠传X - 应用详情</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+        }
+
+        .back-button {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .app-info {
+            padding: 20px;
+            background: #fff;
+            display: flex;
+            gap: 15px;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+        }
+
+        .app-details {
+            flex: 1;
+        }
+
+        .app-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .developer {
+            color: #1a73e8;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .version {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #fff;
+            margin-top: 1px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+            background: #fff;
+        }
+
+        .version-btn, .download-btn {
+            flex: 1;
+            padding: 12px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .version-btn {
+            background: #fff;
+            color: #333;
+        }
+
+        .download-btn {
+            background: #1a73e8;
+            color: #fff;
+            border: none;
+        }
+
+        .section {
+            margin-top: 10px;
+            background: #fff;
+            padding: 15px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .screenshots {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .screenshot {
+            width: 200px;
+            height: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .about {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tag {
+            padding: 5px 15px;
+            border-radius: 15px;
+            background: #f5f5f5;
+            font-size: 14px;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="back-button"></span>
+        <div class="header-right">
+        </div>
+    </div>
+
+    <div class="app-info">
+        <img src="https://files.catbox.moe/5k2ihy.jpg" alt="金庸群侠传X" class="app-icon">
+        <div class="app-details">
+            <div class="app-name">金庸群侠传X</div>
+            <div class="developer">汉家松鼠工作室</div>
+            <div class="version">1.1.0.6・最新版本</div>
+        </div>
+    </div>
+
+<div class="app-list">
+        <div class="app-item">
+            
+            <div class="app-info">
+                
+                
+                <div class="rating">3.6 ★ <span class="app-size"></span></div>
+        <div class="stat-item">
+            <div class="stat-value">1.73GB</div>
+            <div class="stat-label">大小</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value">ALL</div>
+            <div class="stat-label">安卓</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value">官方版</div>
+            <div class="stat-label">渠道</div>
+        </div>
+    </div>
+
+    <div class="action-buttons">
+        <button class="version-btn">
+            <a href="https://share.feijipan.com/s/i8Djmrv5" style="color: black; text-decoration: none;">版本</a>
+            </button>
+        <button class="download-btn">
+            <a href="https://github.com/CppCXY/jyGameXreMake" style="color: white; text-decoration: none;">官网</a>
+            </button>
+    </div>
+
+    <div class="section">
+        <div class="section-header">
+            <div class="section-title">新变化</div>
+            <span></span>
+        </div>
+        <div>在2015年，游戏因为版权方面的原因被下市，制作团队汉家江湖在开放游戏的MOD编辑器后，基本停止了对《金庸奇侠传X》的正常维护。
+<p>.
+<p>玩家的热爱是实打实的，得益于Mod编辑器的开放，《金庸群侠传X》的热爱者们可以通过MOD编辑器持续产出《金庸群侠传X》的相关MOD。
+<p>.
+<p>这样一直到了2019年，《金庸群侠传X》的部分Mod仍保持着高效率的更新，有些Mod经过不同人的接手，甚至演变出了“我在别人制作的Mod基础上魔改、魔改、再魔改的有趣现象”。
+<p>.
+<p>在这个过程中，我们看到了游戏忠实爱好者对游戏的热爱，也看到了一种背后文化生长的可能。</div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">
+            <div class="section-title">应用截图</div>
+        </div>
+        <div class="screenshots">
+            <img src="https://files.catbox.moe/wb6vwr.jpg" alt="截图1" class="screenshot">
+            <img src="https://files.catbox.moe/bgjmfn.jpg" alt="截图2" class="screenshot">
+            <img src="https://files.catbox.moe/y7wxx1.jpg" alt="截图3" class="screenshot">
+            <img src="https://files.catbox.moe/vorkbd.jpg" alt="截图4" class="screenshot">
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-header">
+            <div class="section-title">特点</div>
+            <span></span>
+        </div>
+        <div class="about">
+比如汉家松鼠的官方贴吧。曾经有大量《金庸群侠传X》的Mod在贴吧发布并持续更新，但随着时间的推移，汉家松鼠的新作游戏陆续发布，汉家松鼠的官方贴吧自然也就成为了大多数汉家松鼠新作粉丝们的自留地。
+<p>.
+<p>当然，这其中也有其他一些见不得人的原因迫使他们不得不通过QQ群联络、网盘见的形式发布。
+<p>.
+<p>《绅士武侠》是《金庸群侠传X》众多人气Mod中的一个，通过名字就可以看出，《绅士武侠》显然是一个不太正经的Mod，因为《绅士武侠》是一个加入了大量色情元素的Mod，这是汉家松鼠禁止的行为。
+<p>.
+<p>汉家松鼠在2015年公开Mod编辑器时曾给到了一份名为《金庸群侠传X MOD编辑器使用文档说明》的文件，里面明确提到了所有《金庸群侠传X》的MOD制作者都应该遵循的原则，其中就包括“不应该包含任何政治、色情、暴力、不文明行为等不适内容”。
+<p>.
+
+
+<p>当然，正所谓道高一尺魔高一丈，有不同的玩家就决定了不同的需求存在，而想要在《金庸群侠传X》里体验色情内容的玩家自然也不在少数，《绅士武侠》仅仅只是大量绅士Mod中的一款，之所以将其单独拎出来讲仅仅是因为其使用的“色情内容”过于粗制滥造。
+<p>.
+
+
+<p>通过解包游戏的文件我们找到了《绅士武侠》的CG图包，显然，制作者使用“色情内容”的手段过于“生疏”，90%以上的插图都基本都取自日本AV里的场景，不堪入目。
+<p>.
+<p>更加搞笑的是，近段时间话题讨论度较高的“AI换脸”也在《绅士武侠》的“色情内容”中可以见到，作者挑选了一些在金庸影视剧中扮演过经典角色的女明星替换了原本的AV截图，或许这样会更有代入感吧。
+<p>.
+
+
+<p>全屏打码已经是最后的仁慈
+        </div>
+        <div class="tags">
+            <span class="tag">游戏</span>
+            <span class="tag">养成</span>
+        </div>
+    </div>
+<script src="https://utteranc.es/client.js"
+        repo="Abcd136/"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+  </script>
+</body>
+</html>
